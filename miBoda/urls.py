@@ -6,5 +6,6 @@ from boda_app.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('boda_app.urls') )
+    path('',include('boda_app.urls') ),
+    
 ]

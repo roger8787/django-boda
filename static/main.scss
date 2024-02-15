@@ -1,0 +1,1298 @@
+
+$primary-color:#FFF6E9;
+// $beige-oscuro: #E3E1D9;
+$beige-oscuro:#F2EFE5;
+$verde: #E1F0DA;
+$oro: #cca352;
+$letra-beige: #EBD9B4;
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden; /* Disable horizontal scrollbar */
+}
+
+
+h1{
+    font-size: 100px;
+}
+
+p{
+
+    font-size: 20px;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#section1{
+   
+   
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    background-image: url('./img/section_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-attachment: fixed;
+
+    p{
+        color: white;
+    }
+
+    .principal{
+        
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+       
+        padding: 50px;
+        border-radius: 10px;
+        margin-top: 20px; /* Add margin for spacing */
+        color: white;
+        
+    }
+
+}
+
+
+#section2{
+    height: 40vh;
+    
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .foto{
+        background-image: url('./img/background-ely.jpeg');
+        height: 300px;
+        width: 90%;
+        background-position: center;
+        background-size: cover;
+    }
+   
+  
+
+   
+}
+
+
+#padres{
+    
+    height: 80vh;
+    background-image: url('./img/background-verde.jpg');
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    color: black;
+
+    
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-attachment: fixed;
+   
+    
+}
+
+
+
+#cuenta-atras{
+    height: 50vh;
+
+    background-image: url('./img/ely_cumple.jpeg');
+    
+    background-position: top;
+    background-size: cover;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-attachment: fixed;
+
+    h2{
+        font-size: 20px;
+    }
+
+
+    #countdown{
+        // background-color: rgba(0, 0, 0, 0.7);
+        // padding: 20px;
+        // width: 40%;
+        // height: 20%;
+        text-align: center;
+            padding: 40px;
+            background-color: #ffffff; /* Set a white background color for the container */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+
+
+        
+      
+    }
+    
+    .countdown-item{
+        margin: 0 10px;
+    }
+}
+
+.backgroun{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+   
+    
+    padding: 50px;
+    // border-radius: 10px;
+    margin-top: 20px; /* Add margin for spacing */
+    // color: white;
+}
+
+
+
+
+
+#ceremonia{
+    height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-attachment: fixed;
+
+    h1{
+        font-size: 18px;
+    }
+
+}
+
+
+
+// Define your button styles
+$button-background: black;
+$button-text-color: white;
+
+.button {
+  // Basic styling
+  padding: 10px 20px;
+  background-color: $button-background;
+  color: $button-text-color;
+  border: none;
+  border-radius: 0; // Not rounded
+ 
+
+  // Hover effect
+  &:hover {
+    background-color: $button-text-color;
+    color: $button-background;
+  }
+}
+
+
+#codigo-vestimenta{
+    height: 60vh;
+    border: 2px solid #333;
+
+    h1{
+        color: black;
+    }
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-attachment: fixed;
+
+    .dressContainer{
+        
+       margin-bottom: 20px;
+       
+    
+    }
+}
+
+
+
+
+
+
+
+
+//small devices
+
+
+@media (max-width: 576px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .container {
+      width: 100%;
+    }
+
+
+    h1{
+        font-size: 40px;
+        color: white;
+    }
+
+    p{
+        font-size: 18px;
+        color: gray;
+    }
+
+
+
+    #section1{
+       
+        height:100vh;
+        
+
+        .principal{
+           
+        
+            text-align: center;
+        
+            font-family: 'Dancing Script', cursive;
+            
+
+          
+
+            .enLinea{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .section{
+                    font-size: 25px;
+                    flex:1;
+                    text-align: center;
+                    border-top: 2px solid white;
+                    border-bottom: 2px solid white;
+                    padding: 10px 0;
+
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+
+
+                }
+                
+            }
+
+
+           h1{
+            font-size: 40px;
+           }
+            
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 20px; /* Add margin for spacing */
+            color: white;
+            
+        }
+
+        
+    }
+
+
+    #section2{
+        // background-color: rgba(0, 0, 0, 0.1);
+        background-color: $beige-oscuro;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        h1{
+            color: black;
+            font-size: 26px;
+            font-weight: 200;
+        }
+       
+        height: 800px;
+
+        h2{
+            font-size: 21px;
+        }
+        
+
+        img{
+            padding: 10px;
+        }
+
+        
+    }
+
+
+    #padres{
+        height: 750px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: blue;
+        color: black;
+
+        h1{
+            color: black;
+        }
+
+        h2{
+            font-size:40px;
+        }
+
+        p{
+font-size: 20px;
+color: black;
+        }
+    }
+
+
+  #cuenta-atras{
+  
+    height: 500px;
+            #countdown{
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 20px;
+                width: 80%;
+                height: 130px;
+                border-radius: none;
+            }
+            
+        }
+
+
+
+
+
+    #ceremonia{
+        height: 600px;
+        background-color: $beige-oscuro;
+        line-height: .9;
+        h1{
+            color: black;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+       
+    }
+
+
+
+//for carousel of padrinos.
+
+// #carouselExampleFade{
+  
+//     height: 250px;
+//     background-color: red;
+//     border: 2px black;
+    
+//     button{color: black;}
+
+//     .padrinos{
+        
+//         // height: 350px;
+//         // background-color: #fff;
+//         // // border: 2px solid #e0e0e0;
+//         // border-radius: 15px;
+//         // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+//         h1{
+//             color: black;
+//             font-size: 30px;
+//         }
+//     }
+    
+// }
+
+
+
+   
+
+
+
+
+
+
+
+    #padrinos{
+       
+        padding-top: 10px;
+     
+        margin-bottom: 0;
+        height: 500px;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        h1{
+            color:black;
+        }
+
+        .carousel{
+            line-height: .8;
+            width: 95%;
+            height: 350px;
+            max-height: 350;
+            display: flex;
+            align-items: center;
+            border: 4px solid $beige-oscuro;
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Add some padding for content */
+            text-align: center; /* Center text */
+             background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+
+        }
+
+      
+    }
+
+
+    
+    #damas-honor{
+       
+        margin-bottom: 0;
+        height: 700px;
+        padding-top: 20px;
+      
+       
+        
+       
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: justify;
+        align-items: center;
+        
+        
+        h1{
+            color:black;
+        }
+
+        .carousel{
+            line-height: 1;
+            width: 95%;
+           
+            height: 450px;
+            display: flex;
+            align-items: center;
+            border: 4px solid $beige-oscuro;
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Add some padding for content */
+            text-align: center; /* Center text */
+             background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+
+      
+        }
+
+      
+    }
+
+
+    #codigo-vestimenta{
+        border: none;
+        margin-top: 0;
+        padding-top: 0;
+        
+        height: 80vh;
+        background-image: url('./img/section_4.jpg');
+        background-size: cover;
+
+        h1{
+            padding-bottom: 10px;
+        }
+
+        .dressContainer{
+            // background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+        }
+
+    }
+
+
+
+    #programa{
+        background-color: $beige-oscuro;
+       
+        height: 1000px;
+        padding-top: 20px;
+        h1{
+            color: black;
+        }
+
+       
+
+        .event-section img{
+            height: 50px;
+        }
+
+        
+    }
+
+
+
+
+
+
+    #wedding{
+        padding: 20px;
+    }
+
+
+
+
+    .wedding-form {
+        margin: auto;
+        
+        border: 2px solid #F8F8F8; 
+        padding: 30px; /* Add some padding for content */
+        text-align: center; /* Center text */
+         background-color: #fff; /* White background */
+       
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+
+        max-width: 400px;
+      
+            
+
+            h1{
+                color:black;
+            }
+
+
+
+       
+       
+      }
+      
+      .wedding-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .wedding-form input[type="text"],
+      .wedding-form select,
+      .wedding-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .wedding-form textarea {
+        height: 100px;
+      }
+      
+      .wedding-form button {
+        width: 100%;
+        background-color:black;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 20px;
+      }
+      
+      .wedding-form button:hover {
+        background-color: black;
+      }
+
+
+      #mesa-regalos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+        h1{
+            color:black;
+        }
+
+        .card-mesa{
+            padding: 4px;
+            border-radius: 10px;
+            background-color: $beige-oscuro;
+           
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            height: 200px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            // background-color: #f9f9f9;
+        }
+      }
+
+
+
+
+
+   
+  }//end smalll
+  
+
+
+
+
+
+
+
+
+
+
+//medium
+
+
+//   /* Media query for medium screens (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+
+
+    .container {
+        width: 100%;
+      }
+  
+  
+      h1{
+          font-size: 40px;
+      }
+  
+  
+  
+      #section1{
+        height: 100vh;
+   
+   
+       
+       
+        background-image: url('./img/section_1.jpg');
+
+        background-position: center;
+        background-size: cover;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-attachment: fixed;
+
+
+
+        
+
+
+
+    
+        p{
+            color: white;
+        }
+    
+        .principal{
+            
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            // background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 20px; /* Add margin for spacing */
+            color: white;
+            
+        }
+    
+    }
+  
+  
+      #section2{
+         
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: $beige-oscuro;
+
+       
+          
+      }
+  
+  
+      #padres{
+          height: 1000px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top;
+      }
+  
+  
+    #cuenta-atras{
+      height: 500px;
+              #countdown{
+                  background-color: rgba(0, 0, 0, 0.7);
+                  padding: 20px;
+                  width: 80%;
+                  height: 30%;
+              }
+              
+          }
+  
+  
+  
+  
+  
+      #ceremonia{
+          height: 100vh;
+          background-color:#F8F8F8;
+          h1{
+            font-size: 30px;
+          }
+        
+          
+      }
+
+
+      #padrinos{
+       
+        padding-top: 10px;
+        margin-bottom: 0;
+        height: 35vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        h1{
+            color:black;
+        }
+
+        .carousel{
+            line-height: .5;
+            height: 300px;
+            display: flex;
+            width: 97%;
+            align-items: center;
+            border: 4px solid $beige-oscuro;
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Add some padding for content */
+            text-align: center; /* Center text */
+             background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+
+        }
+
+      
+    }
+
+
+    
+    #damas-honor{
+       
+        margin-bottom: 0;
+        height: 700px;
+        text-align: center;
+        
+       
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: justify;
+       justify-content: center;
+        
+        
+        h1{
+            color:black;
+        }
+
+        .carousel{
+            line-height: .5;
+           
+            height: 400px;
+            display: flex;
+            align-items: center;
+            border: 4px solid $beige-oscuro;
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Add some padding for content */
+            text-align: center; /* Center text */
+             background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+
+      
+        }
+
+      
+    }
+
+  
+  
+      #codigo-vestimenta{
+          height: 90vh;
+          border: none;
+          background-image: url('./img/image4.jpg');
+          background-position: center;
+          background-size: cover;
+
+          .dressContainer{
+            display: flex;
+            justify-content: space-between;
+          }
+          
+      }
+
+      #ceremonia{
+        
+        width: 100%;
+        height: 70vh;
+      }
+  
+  
+      #programa{
+          height: 75vh;
+          padding-top: 10px;
+         
+  
+          .event-section img {
+              max-width: 80%;
+              height: 80px;
+              margin-bottom: 10px;
+         
+          }
+      }
+  
+  
+
+
+
+
+
+
+      .wedding-form {
+        border: 2px solid #F8F8F8; 
+        padding: 30px; /* Add some padding for content */
+        text-align: center; /* Center text */
+         background-color: #fff; /* White background */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+
+        max-width: 80%;
+        margin: 0 auto;
+            
+
+            h1{
+                color:black;
+            }
+
+
+
+       
+       
+      }
+      
+      .wedding-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .wedding-form input[type="text"],
+      .wedding-form select,
+      .wedding-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .wedding-form textarea {
+        height: 100px;
+      }
+      
+      .wedding-form button {
+        background-color: black;
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .wedding-form button:hover {
+        background-color: black;
+      }
+
+
+
+
+      #mesa-regalos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       
+        h1{
+            color:black;
+        }
+
+        .card-mesa{
+            padding: 4px;
+            border-radius: 10px;
+            background-color: $beige-oscuro;
+            width: 90%;
+           
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            height: 200px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            // background-color: #f9f9f9;
+        }
+      }
+
+
+
+
+  
+  
+
+
+}//end medium
+
+
+
+
+
+
+  
+
+
+
+  /* Media query for large screens (769px and above) */
+@media (min-width: 769px) {
+    // body {
+    //   font-size: 17px;
+    // }
+
+
+    h1{
+        font-size: 60px;
+        
+    }
+    
+    p{
+        font-size: 28px;
+    }
+
+    #section1{
+   
+   
+        height: 100vh;
+        background-color: black;
+        background-image: url('./img/section_1.jpg');
+        // background-image: url('../img/section_1.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-attachment: fixed;
+
+      
+    
+        p{
+            color: white;
+        }
+
+
+
+        .enLinea{
+            color: red;
+            .section{
+                font-size: 30px;
+                color:white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+        }
+
+
+    
+        .principal{
+            
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 20px; /* Add margin for spacing */
+            color: white;
+            
+        }
+    
+    }
+   
+
+
+    
+    
+        #section2{
+            height: 80vh;
+          
+
+            h1{
+                font-size: 50px;
+            }
+
+            h2{
+                font-size: 50px;
+            }
+            
+        
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+        
+            .foto{
+                background-image: url('./img/boda_1.jpg');
+                height: 400px;
+               margin: auto;
+                
+                text-align: center;
+                width: 80%;
+                background-position: center;
+                background-size: cover;
+            }
+           
+          
+        
+           
+        }
+    
+    
+        #padres{
+           height: 80vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+    
+    
+      #cuenta-atras{
+        height: 500px;
+                #countdown{
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 20px;
+                    width: 50%;
+                    height: 30%;
+                }
+                
+            }
+    
+    
+    
+    
+    
+        #ceremonia{
+            height: 800px;
+
+            h1{
+                font-size: 60px;
+            }
+        }
+    
+    
+    
+        #codigo-vestimenta{
+            height: 600px;
+            width: 90%;
+            
+        }
+    
+    
+        #programa{
+            height: 800px;
+    
+            .event-section img {
+                max-width: 80%;
+                height: 80px;
+                margin-bottom: 10px;
+           
+            }
+        }
+
+
+
+        #padrinos{
+
+            // background-color: #F8F8F8;
+           
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: .6;
+           
+            color: black;
+            padding: 10px;
+           
+
+            .carousel{
+                height: 350px;
+                width: 80%;
+                display: flex;
+                align-items: center;
+                border: 4px solid #f7ede2; 
+                border-radius: 15px; /* Rounded corners */
+                padding: 20px; /* Add some padding for content */
+                text-align: center; /* Center text */
+                 background-color: #fff; /* White background */
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    
+            }
+
+        }      
+        
+        
+
+        #codigo-vestimenta{
+            border: none;
+            background-image: url('./img/image4.jpg');
+            background-size: cover;
+            width: 100%;
+
+            .dressContainer{
+                
+                display: flex;
+                align-items: center;
+              
+                justify-content: space-around;
+            }
+        }
+
+      
+
+
+
+
+
+
+
+        .wedding-form {
+            border: 2px solid #F8F8F8; 
+            padding: 30px; /* Add some padding for content */
+            text-align: center; /* Center text */
+             background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+    
+            max-width: 400px;
+            margin: 0 auto;
+                
+    
+                h1{
+                    color:black;
+                }
+    
+    
+    
+           
+           
+          }
+          
+          .wedding-form label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          
+          .wedding-form input[type="text"],
+          .wedding-form select,
+          .wedding-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          .wedding-form textarea {
+            height: 100px;
+          }
+          
+          .wedding-form button {
+            background-color: black;
+            font-size: 20px;
+            width: 100%;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .wedding-form button:hover {
+            background-color: black;
+          }
+    
+    
+
+
+
+
+
+
+
+
+    
+  
+  }//end larger
+
